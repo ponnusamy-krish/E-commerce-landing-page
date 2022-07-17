@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="lightbox" style="transform: translateY(-100%)">
+      <button class="lboxclose"><img src="./assets/images/icon-close.svg" alt="" ></button>
+      <div id="lightboximages">
+        <img
+          src="./assets/images/image-product-1.jpg"
+          alt="p1"
+          class="lbfirstimage"
+        />
+        <div class="thumbss">
+          <img
+            src="./assets/images/image-product-1-thumbnail.jpg"
+            alt="p1"
+            class="thumb-image thumb-image1"
+          />
+          <img
+            src="./assets/images/image-product-2-thumbnail.jpg"
+            alt="p2"
+            class="thumb-image thumb-image2"
+          />
+          <img
+            src="./assets/images/image-product-3-thumbnail.jpg"
+            alt="p3"
+            class="thumb-image thumb-image3"
+          />
+          <img
+            src="./assets/images/image-product-4-thumbnail.jpg"
+            alt="p4"
+            class="thumb-image thumb-image4"
+          />
+        </div>
+      </div>
+    </div>
+
+    <button class="pnbtn prevbtn">
+      <img src="./assets/images/icon-previous.svg" alt="" />
+    </button>
+    <button class="pnbtn nextbtn">
+      <img src="./assets/images/icon-next.svg" alt="" />
+    </button>
+
+    <div class="sidebar" style="transform: translate(-100vw)">
+      <button class="sidebarbtn">
+        <img src="./assets/images/icon-close.svg" alt="" />
+      </button>
+      <div class="sidebarcontents">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <img src="./assets/images/icon-menu.svg" alt="" class="menuicon" />
+
+    <div id="details">
+      <div class="f-cart">
+        <p>Cart</p>
+      </div>
+      <div class="ccart">your cart is empty</div>
+    </div>
+
+    <header>
+      <div class="menu">
+        <h1>sneakers</h1>
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="r-menu">
+        <div>
+          <img src="./assets/images/icon-cart.svg" alt="cart" class="cart" />
+          <p id="quan">0</p>
+        </div>
+        <div>
+          <img
+            src="./assets/images/image-avatar.png"
+            alt="avatar"
+            class="avatar"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="images">
+        <img src="./assets/images/image-product-1.jpg" alt="p1" class="p1" />
+        <div class="thumbs">
+          <img
+            src="./assets/images/image-product-1-thumbnail.jpg"
+            alt="p1"
+            class="ip1"
+          />
+          <img
+            src="./assets/images/image-product-2-thumbnail.jpg"
+            alt="p2"
+            class="ip2"
+          />
+          <img
+            src="./assets/images/image-product-3-thumbnail.jpg"
+            alt="p3"
+            class="ip3"
+          />
+          <img
+            src="./assets/images/image-product-4-thumbnail.jpg"
+            alt="p4"
+            class="ip4"
+          />
+        </div>
+      </div>
+      <div class="about">
+        <p class="compname">SNEAKERS COMPANY</p>
+        <h1 id="compTitle">
+          Fall Limited Edition <br />
+          Sneakers
+        </h1>
+        <p class="abt">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <p class="pricing">
+          <span class="amt">$125.00</span> <span class="dis">50%</span>
+          <span class="red-a"> <br />$250.00</span>
+        </p>
+
+        <div class="selection">
+          <div class="btns">
+            <button class="btn" id="minusBtn">
+              <img src="./assets/images/icon-minus.svg" alt="" />
+            </button>
+            <p id="val">0</p>
+            <button class="btn" id="addBtn">
+              <img src="./assets/images/icon-plus.svg" alt="" />
+            </button>
+          </div>
+          <button class="adcbtn">
+            <img
+              src="./\/assets/images/icon-cart.svg"
+              alt="karr"
+              class="kart"
+            />
+            Add To Cart
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

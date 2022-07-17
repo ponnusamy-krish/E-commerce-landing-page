@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sidebar {
+  display: none;
+}
+.menuicon {
+  display: none;
+}
+.cartcontent {
+  margin: 20px;
+}
+.cartcontent img {
+  height: 7vh;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.firstc-text {
+  font-size: 11px;
+}
+.ttl {
+  font-size: small;
+}
+.tamt {
+  font-size: small;
+  font-weight: bolder;
+}
+.f-cart {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: small;
+  font-weight: bolder;
+}
+#details {
+  position: absolute;
+  height: 25vh;
+  width: 20vw;
+  background-color: white;
+  border-radius: 10px;
+  top: 15vh;
+  left: 63.5vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  animation: some 250ms ease-in-out both;
+}
+.checkout {
+  margin-top: -10px;
+  margin-left: 30px;
+  padding: 15px 70px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  top: 110px;
+}
+
+.checkout:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.checkout:active {
+  transform: scale(0.95);
+}
+@keyframes some {
+  from {
+    opacity: 50%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+#quan {
+  position: absolute;
+  top: 35px;
+  margin-left: 10px;
+  background-color: hsl(26, 100%, 55%);
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  font-size: x-small;
+  border-radius: 87%;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+
+}
+header {
+  display: flex;
+  font-family: "Kumbh Sans", sans-serif;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 60%;
+  justify-content: space-between;
+}
+.menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu li {
+  margin: 15px;
+}
+.menu a {
+  font-family: "Kumbh Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration-line: none;
+}
+.menu a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: hsl(26, 100%, 55%) !important;
+  text-underline-offset: 45px;
+  text-decoration-thickness: 4px;
+}
+
+.r-menu {
+  display: flex;
+
+  width: 40%;
+  justify-content: center;
+}
+.avatar {
+  height: auto;
+  width: 4vw;
+  margin: 20px;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.avatar:hover {
+  border-color: orange;
+}
+.cart {
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+main {
+  height: 75vh;
+  width: 70vw;
+  margin: 30px auto;
+  display: flex;
+}
+#images {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+}
+.p1 {
+  height: 70%;
+  margin-left: 15%;
+  border-radius: 15px;
+}
+.thumbs {
+  display: flex;
+  margin-left: 11%;
+}
+.thumbs img {
+  height: 10vh;
+  border-radius: 10px;
+  margin: 13px;
+  border: 3px solid transparent;
+}
+
+.thumbs img:hover {
+  opacity: 40%;
+}
+.about {
+  width: 50%;
+}
+.compname {
+  margin-top: 40px;
+  color: hsl(26, 100%, 55%);
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: small;
+}
+.about h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 6vh;
+}
+.abt {
+  opacity: 40%;
+}
+
+.pricing {
+  margin-top: 20px;
+  display: block;
+  line-height: 28px;
+}
+.amt {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.dis {
+  color: hsl(26, 100%, 55%);
+  margin-left: 20px;
+  background-color: hsla(26, 100%, 55%, 0.2);
+  padding: 8px;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+.red-a {
+  opacity: 30%;
+  font-weight: bolder;
+  margin-top: 8px;
+}
+
+.btns {
+  display: flex;
+  width: 25%;
+  justify-content: space-around;
+  background-color: rgba(189, 198, 255, 0.2);
+  height: 50px;
+  border-radius: 10%;
+}
+.selection {
+  margin-top: 20px;
+  display: flex;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  font-weight: bolder;
+  font-size: large;
+}
+
+#val {
+  margin-top: 12px;
+  font-weight: bold;
+}
+#minusBtn {
+  margin-top: -6px;
+}
+
+.allbtns {
+  display: flex;
+  flex-direction: row;
+}
+
+.adcbtn {
+  margin-left: 10px;
+  padding: 15px 60px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.adcbtn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.adcbtn:active {
+  transform: scale(0.95);
+}
+.kart {
+  filter: brightness(10);
+  height: 15px;
+  margin-right: 4px;
+}
+
+#delete {
+  height: 2vh;
+  padding-left: 10px;
+}
+
+.pnbtn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .pnbtn {
+    display: block;
+  }
+
+  .prevbtn {
+    position: absolute;
+    top: 290px;
+    left: 10px;
+    border: none;
+    background: white;
+    border-radius: 80%;
+    padding: 10px;
+    width: 10vw;
+  }
+
+  .nextbtn {
+    position: absolute;
+    float: inline-end;
+    top: 290px;
+    border: none;
+    background: transparent;
+    left: 88vw;
+
+    background: white;
+    border-radius: 80%;
+    padding: 10px;
+    width: 10vw;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 0;
+
+    padding: 0%;
+    width: 80vw;
+  }
+
+  .menu ul {
+    display: none;
+  }
+  .thumbs {
+    display: none;
+  }
+  .cart {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 60%;
+    justify-content: space-between;
+  }
+  .menu h1 {
+    margin-left: 40px;
+  }
+  header {
+    display: flex;
+    font-family: "Kumbh Sans", sans-serif;
+    flex-direction: row;
+    width: 100%;
+    margin: none;
+    border-bottom: none;
+  }
+  .menuicon {
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 20px;
+  }
+  .p1 {
+    width: 104vw;
+    height: 50vh;
+    margin-right: 0%;
+    margin-left: -10%;
+    border-radius: 0;
+  }
+  .about {
+    margin-left: 30px;
+    width: 100%;
+  }
+  .about h1 {
+    font-size: xx-large;
+  }
+
+  .compname {
+    margin-top: 10px;
+    margin-left: 0;
+    color: hsl(26, 100%, 55%);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: small;
+  }
+  .r-menu {
+    display: flex;
+
+    width: 30%;
+    justify-content: center;
+  }
+  .selection {
+    flex-direction: column;
+  }
+  .btns {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    background-color: rgba(189, 198, 255, 0.2);
+    padding-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 10%;
+  }
+  .adcbtn {
+    padding: 10px 20px;
+    margin-left: 0;
+    height: 8vh;
+    width: 80vw;
+    margin-bottom: 100px;
+  }
+  .avatar {
+    height: 4vh;
+    width: auto;
+    position: absolute;
+    right: 10px;
+    top: -5px;
+  }
+
+  .sidebar {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    height: 100vh;
+    width: 60%;
+    z-index: 4;
+    overflow: visible;
+    transition: all 1s ease;
+  }
+
+  .sidebarbtn {
+    font-size: xx-large;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border: 0;
+    background: transparent;
+  }
+
+  .sidebarcontents {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+
+  .sidebarcontents a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+
+  #details {
+    position: absolute;
+    height: 20vh;
+    width: 80vw;
+    background-color: white;
+    border-radius: 10px;
+    top: 15vh;
+    left: 10vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    animation: some 250ms ease-in-out both;
+  }
+  .checkout {
+    width: 65vw;
+    top: 130px;
+  }
+
+  .firstc-text {
+    font-size: 15px;
+  }
+
+  .ttl {
+    font-size: 15px;
+    top: 80px;
+    left: 230px;
+  }
+  .tamt {
+    font-size: small;
+    font-weight: bolder;
+    top: 85px;
+    margin-left: 10px;
+  }
+
+  .lightbox{
+   display: none;
+  }
+}
+
+.lightbox {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 1s ease;
+}
+
+.lightboximages {
+  position: absolute;
+}
+
+.lbfirstimage {
+  position: absolute;
+  height: 70%;
+  margin-left: 15%;
+  border-radius: 15px;
+  left: 18%;
+  top: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.thumbss {
+  position: absolute;
+  top: 80vh;
+  left: 37vw;
+}
+
+.thumb-image {
+  height: 10vh;
+  margin: 10px;
+  border-radius: 10%;
+  border: 2px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+.thumb-image:hover {
+  border-color: orange;
+}
+.lboxclose{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 30px;
+    left: 68vw;
+    
+}
+
+.lboxclose img{
+    filter: brightness(10);
+}
